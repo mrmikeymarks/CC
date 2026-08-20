@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two-Button Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+         Main container — centered vertically and horizontally via
+         the flexbox rules in styles.css (body → display:flex).
+         Explicit spacing is handled entirely in the stylesheet.
+    ============================================================ -->
+    <main class="container">
+      <h1>Two-Button Demo</h1>
+
+      <!-- Button row: gap between buttons is set to 24 px in CSS -->
+      <div class="button-row">
+        <button
+          id="btn-primary"
+          class="btn btn-primary"
+          type="button"
+          aria-label="Confirm action"
+        >
+          Confirm
+        </button>
+
+        <button
+          id="btn-secondary"
+          class="btn btn-secondary"
+          type="button"
+          aria-label="Cancel action"
+        >
+          Cancel
+        </button>
+      </div>
+
+      <!-- Status message area — reserved space prevents layout shift -->
+      <p id="status-message" class="status" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
